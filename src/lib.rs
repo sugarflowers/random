@@ -21,6 +21,21 @@ pub fn get_bool() -> bool {
     bool_value
 }
 
+/*
+ * About running tests. 
+ *
+ * $ cargo test – --nocapture 
+ *
+ *
+ * Or if you want to test each function, run 
+ *
+ * $ cargo test <function name> – --nocapture 
+ *
+ *
+ * Please note that the test code always returns true, 
+ * so you need to see the real execution result.
+ */
+
 #[cfg(test)]
 mod tests {
     use super::*;
