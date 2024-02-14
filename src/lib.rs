@@ -5,7 +5,6 @@ fn get_rng() -> ThreadRng {
 }
 
 pub fn random() -> f64 {
-    //let mut rng = rand::thread_rng();
     let mut rng = get_rng();
     rng.gen()
 }
@@ -17,8 +16,7 @@ pub fn get_i32(max: i32) -> i32 {
 
 pub fn get_bool() -> bool {
     let mut rng = get_rng();
-    let bool_value: bool = rng.gen();
-    bool_value
+    rng.gen()
 }
 
 /*
