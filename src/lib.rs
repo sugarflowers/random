@@ -9,9 +9,9 @@ pub fn random() -> f64 {
     rng.gen()
 }
 
-pub fn get_i32(max: i32) -> i32 {
+pub fn get_i32(range_limit: i32) -> i32 {
     let r_f64 = random();
-    (r_f64 * max as f64) as i32
+    (r_f64 * range_limit as f64) as i32
 }
 
 pub fn get_bool() -> bool {
