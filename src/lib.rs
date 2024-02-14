@@ -22,7 +22,7 @@ mod tests {
 
     #[test]
     fn get_random_i32() {
-        for i in 1..20 {
+        for _ in 1..20 {
             println!("get_i32: {:?}", get_i32(10));
         }
         assert_eq!(true, true);
